@@ -25,8 +25,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-lab-docker:latest .
+        docker build -t serenamarina19/ml_in_production:latest .
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/devops-lab-docker:latest
+        docker push serenamarina19/ml_in_production:latest
