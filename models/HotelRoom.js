@@ -6,7 +6,7 @@ const dbURI = "mongodb+srv://serenamarina20:serena@cluster0.l3vjm.mongodb.net/?r
 
 mongoose.connect(dbURI)
     .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Failed to connect to MongoDB:', err));
+    .catch(err => console.error('Failed  to connect to MongoDB:', err));
 
 // Define a schema and model for Hotel Room
 const hotelRoomSchema = new mongoose.Schema({
