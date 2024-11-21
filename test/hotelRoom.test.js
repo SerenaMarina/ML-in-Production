@@ -45,7 +45,7 @@ describe('Hotel Room GET API Tests', () => {
         expect(response.status).toBe(400);
     })
 
-    it('should create a New room where roomNumber already exists in DB (unhappy path)', async () => {
+    it('should create a New room where roomNumber  already exists in DB (unhappy path)', async () => {
         const response = await request(app)
             .post('/rooms')
             .send({ roomNumber: 102, roomType: 'Suite', pricePerNight: 200, isBooked: false });
